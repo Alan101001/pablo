@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website with login & Registration|codehal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="Monarch">Monarch</h2>
+      <nav class="navigation">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <button class="btnlogin-popup">login</button>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span> 
+
+
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#" onsubmit="handleSubmit()">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="#">forgot password?</a>
+          </div>
+          <button type="submit" onclick="handleSubmit()" class="btn">login</button>
+          <div class="login-register">
+            <p>
+              don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    
+      </form>
+    </div>
+    <script
+      src="script.js">
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      const handleSubmit=() => {
+        // e.preventDefault()
+        console.log("Hello world")
+      }
+    </script>
+  </body>
+</html>
